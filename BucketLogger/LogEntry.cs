@@ -43,7 +43,7 @@ namespace BucketLogger
         public void GenerateLogLine()
         {
             var jsonMessage = JsonConvert.SerializeObject(LogMessage, Formatting.None);
-            LogLine = $"{MessageLevel}, {LogTime}, {jsonMessage}";
+            LogLine = $"{LogTime}, {MessageLevel}, {jsonMessage}";
         }
     }
 }
